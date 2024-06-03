@@ -51,5 +51,5 @@ Now copy the ngrok URL {your ngrok url here}/api/Dialogflow to DialogFlow webhoo
 
 ## Dialogflow Configuration:
 - Set up Dialogflow intent with webhook fulfillment using the ngrok URL.
-- Test the bot in the Dialogflow console or any supported platform.
+- Test the bot in the Dialogflow console.
 
