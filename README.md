@@ -32,5 +32,24 @@ This project entails the development and deployment of a conversational bot usin
 1. Clone the Repository
 ```
 https://github.com/MAKMoiz23/ChatBotIntegration.git
-cd order-status-bot
+cd ChatBotIntegration
 ```
+2. Build the Solution
+```
+dotnet build
+```
+3. Run the Application
+```
+dotnet run
+```
+Local Api URL will be : http://localhost:5114
+4. Expose localhost port for testing
+```
+ngrok http 127.0.0.1:5114
+```
+Now copy the ngrok URL {your ngrok url here}/api/Dialogflow to DialogFlow webhook
+
+## Dialogflow Configuration:
+- Set up Dialogflow intent with webhook fulfillment using the ngrok URL.
+- Test the bot in the Dialogflow console or any supported platform.
+
