@@ -42,7 +42,7 @@ dotnet build
 ```
 dotnet run
 ```
-Local Api URL will be : http://localhost:5114
+Local Api URL will be : http://localhost:5114 <br />
 4. Expose localhost port for testing
 ```
 ngrok http 127.0.0.1:5114
