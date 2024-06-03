@@ -54,6 +54,22 @@ This project entails the development and deployment of a conversational bot usin
 ```
 
 
+## Objectives
+### Setup a Simple Dialogflow ES Bot
+
+- **Build the Conversational Flow**: Construct the conversational flow as depicted in the sequence diagram (Figure 1) in your Dialogflow ES bot.
+
+### Create a REST API for Webhook Requests
+
+- **Receive the WebhookRequest**: Develop a REST API that can receive a webhook request from the bot created in step 1. Extract the order ID provided by the user from the WebhookRequest.
+- **Fetch Shipment Date**: Use the API to make a POST request to fetch the shipment date based on the extracted order ID.
+- **Return the WebhookResponse**: Construct and return a WebhookResponse with the appropriate response as documented in the sequence diagram below.
+
+### SequecneDiagram
+
+![image](https://github.com/MAKMoiz23/ChatBotIntegration/assets/69483202/cce47522-a1c4-407f-a848-79c794b02953)
+
+
 ## Setup
 ### Prerequisites
 - .NET Core SDK 8.0
