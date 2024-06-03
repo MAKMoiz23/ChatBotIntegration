@@ -65,7 +65,7 @@ This project entails the development and deployment of a conversational bot usin
 - **Fetch Shipment Date**: Use the API to make a POST request to fetch the shipment date based on the extracted order ID.
 - **Return the WebhookResponse**: Construct and return a WebhookResponse with the appropriate response as documented in the sequence diagram below.
 
-### SequecneDiagram
+### Sequecne Diagram
 
 ![image](https://github.com/MAKMoiz23/ChatBotIntegration/assets/69483202/cce47522-a1c4-407f-a848-79c794b02953)
 
