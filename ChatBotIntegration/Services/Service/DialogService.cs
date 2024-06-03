@@ -62,7 +62,7 @@ namespace ChatBotIntegration.Services.Service
                     {
                         Text = new Intent.Types.Message.Types.Text
                         {
-                            Text_ = { $"Your order ID {orderID} will be shipped on {result.ShipmentDate}" }
+                            Text_ = { $"Your order ID {orderID} will be shipped on {result.ShipmentDate:dddd, dd MMM yyyy}" }
                         }
                     });
 
