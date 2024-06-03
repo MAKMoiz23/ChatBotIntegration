@@ -23,6 +23,37 @@ This project entails the development and deployment of a conversational bot usin
 4. **Order Status Inquiry**: The API sends post request to [OrderApi](https://orderstatusapi-dot-organization-project-311520.uc.r.appspot.com/api/getOrderStatus) service.
 5. **Response Delivery**: The API sends the order status back to Dialogflow, which then responds to the user.
 
+## Usage
+- Use the https://chatbotintegration.azurewebsites.net/api/Dialogflow to get the shipment detail. Use a POST request and send the order ID in the request body.
+
+- The request body should be in JSON format and contain the order ID as shown below:
+### RequestBody:
+```
+{
+  "queryResult": {
+    "queryText": "My order id is 155",
+    "parameters": {
+      "number": 155
+    }
+  }
+}
+```
+### ResponseBody
+```
+{
+    "fulfillmentMessages": [
+        {
+            "text": {
+                "text": [
+                    "Your order ID 155 will be shipped on Wednesday, 12 Jun 2024"
+                ]
+            }
+        }
+    ]
+}
+```
+
+
 ## Setup
 ### Prerequisites
 - .NET Core SDK 8.0
