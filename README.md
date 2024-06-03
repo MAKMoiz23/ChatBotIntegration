@@ -103,3 +103,21 @@ Now copy the ngrok URL {your ngrok url here}/api/Dialogflow to DialogFlow webhoo
 - Set up Dialogflow intent with webhook fulfillment using the ngrok URL.
 - Test the bot in the Dialogflow console.
 
+## API Specification
+### API URL https://orderstatusapi-dot-organization-project-311520.uc.r.appspot.com/api/getOrderStatus
+
+### API Method: POST
+
+### Request Body
+```
+{
+  "orderId": "31313"
+}
+
+```
+### Response Body
+```
+{
+  "shipmentDate": "2022-08-18T21:31:25.565Z"
+}
+```
