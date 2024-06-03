@@ -22,3 +22,15 @@ This project entails the development and deployment of a conversational bot usin
 3. **Webhook Handling**: The webhook, implemented using .NET Core Web API, processes the request.
 4. **Order Status Inquiry**: The API sends post request to [OrderApi](https://orderstatusapi-dot-organization-project-311520.uc.r.appspot.com/api/getOrderStatus) service.
 5. **Response Delivery**: The API sends the order status back to Dialogflow, which then responds to the user.
+
+## Setup
+### Prerequisites
+- .NET Core SDK 8.0
+- Dialogflow ES account
+
+### Local Setup
+1. Clone the Repository
+```
+https://github.com/MAKMoiz23/ChatBotIntegration.git
+cd order-status-bot
+```
