@@ -69,6 +69,9 @@ This project entails the development and deployment of a conversational bot usin
 
 ![image](https://github.com/MAKMoiz23/ChatBotIntegration/assets/69483202/cce47522-a1c4-407f-a848-79c794b02953)
 
+### Optional Tasks:
+- Convert shipment date to a human-readable format.
+- Deploy the REST API to any cloud instance (AWS, Azure,GCP, IBM, etc.)
 
 ## Setup
 ### Prerequisites
