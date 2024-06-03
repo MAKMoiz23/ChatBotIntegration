@@ -1,14 +1,21 @@
+using ChatBotIntegration.Models.OrderStatus.Settings;
 using ChatBotIntegration.Services.IService;
 using ChatBotIntegration.Services.Service;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddHttpClient<IOrderStatusService, OrderStatusService>((serviceProvider, client) =>
 {
-    client.BaseAddress = new Uri("https://orderstatusapi-dot-organization-project-311520.uc.r.appspot.com");
+    var settings = serviceProvider
+        .GetRequiredService<IOptions<OrderStatusSettings>>().Value;
+    client.BaseAddress = new Uri(settings.Url);
 });
 builder.Services.AddScoped<IDialogService, DialogService>();
+builder.Services.Configure<OrderStatusSettings>(
+        builder.Configuration.GetSection("OrderApiUrl")
+    );
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
